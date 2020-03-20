@@ -6,3 +6,4 @@ function isPalindrome(string){
   }
   return true;
 }
+//push check
