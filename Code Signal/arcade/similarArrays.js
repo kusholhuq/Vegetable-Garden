@@ -4,12 +4,10 @@ function areSimilar(a, b) {
   //if they are different, add 1 to the different counter
   //return true if different counter is less than or equal to 2
   //return false if different counter is greater than 2
-  // let sum1=0;
-  // let sum2=0;
+  let sum1 = 0;
+  let sum2 = 0;
 
-  // if(sum1!==sum2){
-  //     return false;
-  // }
+
   // if(counter>2){
   //     return false
   // } else {
@@ -41,11 +39,14 @@ function areSimilar(a, b) {
 
   let counter = 0;
   for (let i = 0; i < a.length; i++) {
-    // sum1+=a[i];
-    // sum2+=b[i];
+    sum1 += a[i];
+    sum2 += b[i];
     if (a[i] !== b[i]) {
       counter++;
     }
+  }
+  if (sum1 !== sum2) {
+    return false;
   }
   if (counter > 2) {
     return false
