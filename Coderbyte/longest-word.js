@@ -18,7 +18,13 @@ function LongestWord(sen) {
       || letterArray[i] === "$" || letterArray[i] === "%" || letterArray[i] === "^" ||
       letterArray[i] === "&" || letterArray[i] === "*" || letterArray[i] === "(" ||
       letterArray[i] === ")" || letterArray[i] === "," || letterArray[i] === "." ||
-      letterArray[i] === "'" || letterArray[i] === '"' || letterArray[i] === "?") {
+      letterArray[i] === "'" || letterArray[i] === '"' || letterArray[i] === "?"
+      || letterArray[i] === "[" || letterArray[i] === "]" || letterArray[i] === ":"
+      || letterArray[i] === ";" || letterArray[i] === "/" || letterArray[i] === "\\"
+      || letterArray[i] === "{" || letterArray[i] === "}" || letterArray[i] === "|"
+      || letterArray[i] === "-" || letterArray[i] === "_" || letterArray[i] === "+"
+      || letterArray[i] === "<" || letterArray[i] === ">" || letterArray[i] === "~"
+      || letterArray[i] === "`") {
       letterArray.splice(i, 1);
       i--;
     }
