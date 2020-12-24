@@ -6,7 +6,7 @@ function birthdayCakeCandles(candles) {
 
   let max = -10000;
   for (let i = 0; i < candles.length; i++) {
-    if (candles[i] < max) {
+    if (candles[i] > max) {
       max = candles[i];
     }
   }
