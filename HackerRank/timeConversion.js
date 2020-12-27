@@ -11,12 +11,12 @@ function timeConversion(s) {
   let seconds = s[6] + s[7];
   let ampm = s[8] + s[9];
 
-  if (ampm === 'AM') {
-    hours = eval(hours - 12);
-    //could do a parse int here instead
+  if (ampm === 'PM' && parseInt(hours) !== 12) {
+    hours = eval(parseInt(hours) + 12);
   }
-  if (ampm === 'PM') {
-    hours = eval(hours + 12);
+  if (ampm === 'AM' && parseInt(hours) === 12) {
+    hours = '00';
   }
+  console.log(`${hours}:${minutes}:${seconds}`)
   return `${hours}:${minutes}:${seconds}`;
 }
